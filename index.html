@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta http-equiv="content-type"
+          content="text/html; charset=UTF-8;charset=utf-8"/>
+    <meta name="viewport"
+          content="width=device-width,initial-scale=1"/>
+    <title>Box Model</title>
+    <!-- no ui slider css: -->
+    <link rel="stylesheet"
+          type="text/css"
+          href="css/nouislider.css"
+          media="all"/>
+    <!-- site style: -->
+    <link rel="stylesheet"
+          type="text/css"
+          href="css/site.css"
+          media="all"/>
+    <!-- box model script: -->
+    <script src="js/box_model.js"
+            charset="utf-8"
+            defer>
+    </script>
+    <!-- no ui slider js: -->
+    <script src="js/nouislider.js"
+            charset="utf-8">
+    </script>
+    <!-- plotly js: -->
+    <script src="js/plotly.js"
+            charset="utf-8">
+    </script>
+    <!-- site javascripts: -->
+    <script src="js/site.js"
+            charset="utf-8"
+            defer>
+    </script>
+  </head>
+  <body>
+    <!-- container start: -->
+    <div id="container"
+         class="container column">
+      <!-- header: -->
+      <div id="header"
+           class="header">
+          <img id="logo_img"
+               class="logo_image"
+               src='img/cemac_logo.png'>
+          <img id="header_img"
+               class="header_image"
+               src='img/box.png'>
+      </div>
+      <!-- navigation: -->
+      <div id="navigation"
+           class="navigation row flex_no_grow">
+      </div>
+      <!-- content: -->
+      <div id="content"
+           class="content column">
+
+        <!-- title: -->
+        <span class="content_vertical_space_1"></span>
+        <div id="content_title"
+             class="content_title row flex_center flex_no_grow">
+          <div class="content_title_item">
+            <h1>Box Model</h1>
+          </div>
+        </div>
+        <span class="content_vertical_space_1"></span>
+
+        <!-- controls: -->
+        <div id="controls"
+          class="controls row_wrap flex_justify flex_grow">
+          <!-- days: -->
+          <div id="day_control"
+               class="day_control control column">
+            <div id="day_value"
+                 class="day_value slider_value">
+            </div>
+            <div id="day_range"
+                 class="day_range slider_range">
+            </div>
+          </div>
+          <!-- month: -->
+          <div id="month_control"
+               class="month_control control column">
+            <div id="month_value"
+                 class="month_value slider_value">
+            </div>
+            <div id="month_range"
+                 class="month_range slider_range">
+            </div>
+          </div>
+          <!-- lat: -->
+          <div id="lat_control"
+               class="lat_control control column">
+            <div id="lat_value"
+                 class="lat_value slider_value">
+            </div>
+            <div id="lat_range"
+                 class="lat_range slider_range">
+            </div>
+          </div>
+          <!-- surface: -->
+          <div id="surface_control"
+               class="surface_control control column">
+            <div id="surface_value"
+                 class="surface_value slider_value">
+            </div>
+            <div id="surface_range"
+                 class="surface_range slider_range">
+            </div>
+          </div>
+          <!-- temperature: -->
+          <div id="temp_control"
+               class="temp_control control column">
+            <div id="temp_value"
+                 class="temp_value slider_value">
+            </div>
+            <div id="temp_range"
+                 class="temp_range slider_range">
+            </div>
+          </div>
+          <!-- pressure: -->
+          <div id="press_control"
+               class="press_control control column">
+            <div id="press_value"
+                 class="press_value slider_value">
+            </div>
+            <div id="press_range"
+                 class="press_range slider_range">
+            </div>
+          </div>
+          <!-- initial no: -->
+          <div id="no_ini_control"
+               class="no_ini_control control column">
+            <div id="no_ini_value"
+                 class="no_ini_value slider_value">
+            </div>
+            <div id="no_ini_range"
+                 class="no_ini_range slider_range">
+            </div>
+          </div>
+          <!-- no rate: -->
+          <div id="no_control"
+               class="no_control control column">
+            <div id="no_value"
+                 class="no_value slider_value">
+            </div>
+            <div id="no_range"
+                 class="no_range slider_range">
+            </div>
+          </div>
+          <!-- initial voc: -->
+          <div id="voc_ini_control"
+               class="voc_ini_control control column">
+            <div id="voc_ini_value"
+                 class="voc_ini_value slider_value">
+            </div>
+            <div id="voc_ini_range"
+                 class="voc_ini_range slider_range">
+            </div>
+          </div>
+          <!-- voc rate: -->
+          <div id="voc_control"
+               class="voc_control control column">
+            <div id="voc_value"
+                 class="voc_value slider_value">
+            </div>
+            <div id="voc_range"
+                 class="voc_range slider_range">
+            </div>
+          </div>
+          <!-- initial co: -->
+          <div id="co_ini_control"
+               class="co_ini_control control column">
+            <div id="co_ini_value"
+                 class="co_ini_value slider_value">
+            </div>
+            <div id="co_ini_range"
+                 class="co_ini_range slider_range">
+            </div>
+          </div>
+          <!-- co rate: -->
+          <div id="co_control"
+               class="co_control control column">
+            <div id="co_value"
+                 class="co_value slider_value">
+            </div>
+            <div id="co_range"
+                 class="co_range slider_range">
+            </div>
+          </div>
+          <!-- cycle rate: -->
+          <div id="cycle_control"
+               class="cycle_control control column">
+            <div id="cycle_value"
+                 class="cycle_value slider_value">
+            </div>
+            <div id="cycle_range"
+                 class="cycle_range slider_range">
+            </div>
+          </div>
+          <!-- water vapour: -->
+          <div id="h2o_control"
+               class="h2o_control control column">
+            <div id="h2o_value"
+                 class="h2o_value slider_value">
+            </div>
+            <div id="h2o_range"
+                 class="h2o_range slider_range">
+            </div>
+          </div>
+        </div>
+        <span class="content_vertical_space_1"></span>
+
+        <!-- buttons -->
+        <div id="buttons"
+             class="buttons row flex_center flex_no_grow">
+          <button id="save_csv"
+                  class="save_csv"
+                  onclick="save_csv();">
+            save data as csv
+          </button>
+          <button id="run_model"
+                  class="run_model"
+                  onclick="run_model();">
+            run model
+          </button>
+        </div>
+        <span class="content_vertical_space_1"></span>
+
+        <!-- plots: -->
+        <div id="plots"
+             class="plots row_wrap flex_justify flex_grow">
+        </div>
+        <span class="content_vertical_space_1"></span>
+
+      <!-- end content: -->
+      </div>
+      <!-- footer: -->
+      <div id="footer"
+           class="footer row flex_no_grow">
+        <div id="footer_text"
+             class="footer_text flex_center row">
+        </div>
+      </div>
+    <!-- container end: -->
+    </div>
+  </body>
+</html>
