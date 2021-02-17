@@ -23,9 +23,11 @@ WASM_SOURCE = box_model.c slsode/slsode.c f2c/src/*.o
 # WASM output:
 WASM_OUT = ../wasm/box_model.wasm
 
-all: $(WASM_SOURCE)
+$(WASM_OUT): $(WASM_SOURCE)
 	$(CC) $(CFLAGS) -o $(WASM_OUT) $(WASM_SOURCE) $(LIBS)
 	chmod 644 $(WASM_OUT)
+
+all: $(WASM_OUT)
 
 clean:
 	\rm -f $(WASM_OUT)
