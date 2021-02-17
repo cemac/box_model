@@ -1,0 +1,4 @@
+*.swp
+*.o
+src/f2c/libf2c.zip
+src/f2c/src/
