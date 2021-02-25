@@ -23,4 +23,4 @@ The `solzenith` function in the code was translated from an IDL function of the 
 
 The model uses the LSODE solver from [ODEPACK](https://computing.llnl.gov/casc/odepack/) to replicate the IDL [LSODE](https://www.l3harrisgeospatial.com/docs/lsode.html) function.
 
-See the [src](src/) directory for more information on comiling the model code.
+See the [src](src/) directory for more information on compiling the model code.
