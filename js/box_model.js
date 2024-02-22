@@ -124,7 +124,7 @@ var BoxModel = function(args) {
       'units': 'ppt',
       'values': []
     },
-    'N2OH': {
+    'N2O5': {
       'index': 11,
       'units': 'ppt',
       'values': []
